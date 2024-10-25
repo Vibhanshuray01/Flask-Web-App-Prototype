@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Selector and Trivia</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="{{ url_for('static', filename='js/script.js') }}" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h2>Select an Animal</h2>
+            <label><input type="radio" name="animal" value="cat"> Cat</label>
+            <label><input type="radio" name="animal" value="dog"> Dog</label>
+            <label><input type="radio" name="animal" value="elephant"> Elephant</label>
+            <div id="animal-image"></div>
+        </div>
+
+        <div class="box">
+            <h2>Upload a File</h2>
+            <input type="file" id="file-input">
+            <div id="file-info"></div>
+        </div>
+
+        <div class="box">
+            <h2>Trivia Question</h2>
+            <div id="trivia-question"></div>
+            <div id="trivia-answers"></div>
+        </div>
+    </div>
+</body>
+</html>
